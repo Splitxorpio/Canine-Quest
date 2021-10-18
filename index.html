@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Canine Quest</title>
+    <link rel="icon" type="image/png" href="icon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <audio autoplay loop>
+      <source src="instruct.mp3">
+    </audio>
+  </head>
+  <body id="body">
+    <script src="character.js" defer></script>
+
+
+    <!--div for the story for penny-->
+    <div id="penny">
+        <!--dialogue (the user clicks to continue)-->
+        <h2 onclick="story()" id="storyTxt">There once was an alien, his name was Jeff. Jeff had his dog, Spot, since he was a baby.<p>Click to continue</p></h2>
+        <div>
+            <img id="girl" src="girl.png"> <img id="spot" src="dog.png">
+        </div>
+        <button id="continue" onclick="starter()">Continue</button>
+    </div>
+
+    <!--div for the instructions-->
+    <div id="instruct">
+      <h1>Instructions</h1>
+      <h3>Collect the 3000 coins to open the door into the tower. Be careful to not get hit by monsters or you'll be sent back down.</h3>
+      <button id="start" class="button" onclick="game()">Start</button>
+    </div>
+  </body>
+</html>

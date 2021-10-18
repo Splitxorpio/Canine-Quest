@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
+* {
+  font-family: "Inter", sans-serif;
+  background-size: cover;
+}
+body {
+  background: black;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.options{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.options div{
+  margin: 5px;
+  margin-top: 40px;
+  border: 3px solid black;
+  padding: 10px;
+  background-color: lavender;
+  border-radius: 25px;
+  animation: float 6s ease-in-out infinite;
+  transition-duration: 0.45s;
+  cursor: pointer;
+}
+.options div:hover{
+  transition-duration: 0.45s;
+  background-color: gray;
+  color: black;
+}
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-10px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+.options h3 {
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
+/*This is for the dialogue and such*/
+
+h2 {
+  text-align: center;
+  border: 5px solid black;
+  background-color: lavender;
+  padding: 20px;
+  margin-left: 8%;
+  width: 80%;
+}
+
+/*girl*/
+#penny div {
+  justify-content: center;
+  display: flex;
+  position: relative;;
+}
+#spot{
+  position: absolute;
+  top: 150%;
+  right: 400%;
+}
+#girl{
+  position: relative;
+  top: 150%;
+  right: 500%;
+}
+/*boy*/
+#luke div {
+  justify-content: center;
+  display: flex;
+  position: relative;;
+}
+#spot2{
+  position: absolute;
+  top: 150%;
+  right: 400%;
+}
+#boy{
+  position: relative;
+  top: 150%;
+  right: 500%;
+}
+/*nb*/
+#sam div {
+  justify-content: center;
+  display: flex;
+  position: relative;
+}
+#spot3{
+  position: absolute;
+  top: 150%;
+  right: 400%;
+}
+#nb{
+  position: relative;
+  top: 150%;
+  right: 500%;
+}
+
+#continue{
+  position: absolute;
+  left: 45%;
+  top: 80%;
+}
+button{
+  font-size: large;
+  border: 3px solid black;
+  background-color: azure;
+  position: absolute;
+  padding: 25px;
+  border-radius: 25px;
+}
+.button{
+  position: absolute;
+  left: 46.5%;
+  top: 110%;
+  padding: 25px;
+}
+/*for the instructions*/
+#instruct{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 110px;
+  text-align: center;
+  border: 3px solid black;
+  background-color: lavender;
+  padding-bottom: 10px;
+  border-radius: 25px;
+  margin-top: 20px;
+  animation: float 6s ease-in-out infinite;
+}
+/* #instruct h3{
+  position: absolute;
+  top: 10%;
+}
+#instruct h1{
+  padding-left: 40%;
+} */
+
+/*for the ending*/
+#words h3{
+  display: inline;
+}
+.ending{
+  border: 3px solid black;
+  background-color: lavender;
+  text-align: center;
+}
+#words{
+  margin-bottom: 100px;
+}
